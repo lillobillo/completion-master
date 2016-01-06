@@ -1,0 +1,303 @@
+public final class java/lang/String
+extends java/lang/Object
+implements
+	java/io/Serializable
+	java/lang/Comparable
+	java/lang/CharSequence
+attributes
+	InnerClasses
+	Signature=Ljava/lang/Object;Ljava/io/Serializable;Ljava/lang/Comparable<Ljava/lang/String;>;Ljava/lang/CharSequence;
+	SourceFile=String.java
+Fields
+	private final value [C
+	private hash I
+	private static final HASHING_SEED I
+	private static final serialPersistentFields [Ljava/io/ObjectStreamField;
+	private static final serialVersionUID J
+		 ConstantValue
+	private transient hash32 I
+	public static final CASE_INSENSITIVE_ORDER Ljava/util/Comparator;
+		 Signature=Ljava/util/Comparator<Ljava/lang/String;>;
+Methods
+	<init> (II[C)V
+		 Code ( LineNumberTable ) Deprecated RuntimeVisibleAnnotations
+	<init> ([CZ)V
+		 Code ( LineNumberTable )
+	getChars ([CI)V
+		 Code ( LineNumberTable )
+	hash32 ()I
+		 Code ( LineNumberTable StackMapTable )
+	private indexOfSupplementary (II)I
+		 Code ( LineNumberTable StackMapTable )
+	private lastIndexOfSupplementary (II)I
+		 Code ( LineNumberTable StackMapTable )
+	private static checkBounds ([BII)V
+		 Code ( LineNumberTable StackMapTable )
+	public <init> ()V
+		 Code ( LineNumberTable )
+	public <init> (Ljava/lang/String;)V
+		 Code ( LineNumberTable )
+	public <init> (Ljava/lang/StringBuffer;)V
+		 Code ( LineNumberTable StackMapTable )
+	public <init> (Ljava/lang/StringBuilder;)V
+		 Code ( LineNumberTable )
+	public <init> ([B)V
+		 Code ( LineNumberTable )
+	public <init> ([BI)V
+		 Code ( LineNumberTable ) Deprecated RuntimeVisibleAnnotations
+	public <init> ([BII)V
+		 Code ( LineNumberTable )
+	public <init> ([BIII)V
+		 Code ( LineNumberTable StackMapTable ) Deprecated RuntimeVisibleAnnotations
+	public <init> ([BIILjava/lang/String;)V
+		 Code ( LineNumberTable StackMapTable ) Exceptions
+	public <init> ([BIILjava/nio/charset/Charset;)V
+		 Code ( LineNumberTable StackMapTable )
+	public <init> ([BLjava/lang/String;)V
+		 Code ( LineNumberTable ) Exceptions
+	public <init> ([BLjava/nio/charset/Charset;)V
+		 Code ( LineNumberTable )
+	public <init> ([C)V
+		 Code ( LineNumberTable )
+	public <init> ([CII)V
+		 Code ( LineNumberTable StackMapTable )
+	public <init> ([III)V
+		 Code ( LineNumberTable StackMapTable )
+	public charAt (I)C
+		 Code ( LineNumberTable StackMapTable )
+	public codePointAt (I)I
+		 Code ( LineNumberTable StackMapTable )
+	public codePointBefore (I)I
+		 Code ( LineNumberTable StackMapTable )
+	public codePointCount (II)I
+		 Code ( LineNumberTable StackMapTable )
+	public compareTo (Ljava/lang/String;)I
+		 Code ( LineNumberTable StackMapTable )
+	public compareToIgnoreCase (Ljava/lang/String;)I
+		 Code ( LineNumberTable )
+	public concat (Ljava/lang/String;)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public contains (Ljava/lang/CharSequence;)Z
+		 Code ( LineNumberTable StackMapTable )
+	public contentEquals (Ljava/lang/CharSequence;)Z
+		 Code ( LineNumberTable StackMapTable )
+	public contentEquals (Ljava/lang/StringBuffer;)Z
+		 Code ( LineNumberTable StackMapTable )
+	public endsWith (Ljava/lang/String;)Z
+		 Code ( LineNumberTable )
+	public equals (Ljava/lang/Object;)Z
+		 Code ( LineNumberTable StackMapTable )
+	public equalsIgnoreCase (Ljava/lang/String;)Z
+		 Code ( LineNumberTable StackMapTable )
+	public getBytes ()[B
+		 Code ( LineNumberTable )
+	public getBytes (II[BI)V
+		 Code ( LineNumberTable StackMapTable ) Deprecated RuntimeVisibleAnnotations
+	public getBytes (Ljava/lang/String;)[B
+		 Code ( LineNumberTable StackMapTable ) Exceptions
+	public getBytes (Ljava/nio/charset/Charset;)[B
+		 Code ( LineNumberTable StackMapTable )
+	public getChars (II[CI)V
+		 Code ( LineNumberTable StackMapTable )
+	public hashCode ()I
+		 Code ( LineNumberTable StackMapTable )
+	public indexOf (I)I
+		 Code ( LineNumberTable )
+	public indexOf (II)I
+		 Code ( LineNumberTable StackMapTable )
+	public indexOf (Ljava/lang/String;)I
+		 Code ( LineNumberTable )
+	public indexOf (Ljava/lang/String;I)I
+		 Code ( LineNumberTable )
+	public intern ()Ljava/lang/String;
+	public isEmpty ()Z
+		 Code ( LineNumberTable StackMapTable )
+	public lastIndexOf (I)I
+		 Code ( LineNumberTable )
+	public lastIndexOf (II)I
+		 Code ( LineNumberTable StackMapTable )
+	public lastIndexOf (Ljava/lang/String;)I
+		 Code ( LineNumberTable )
+	public lastIndexOf (Ljava/lang/String;I)I
+		 Code ( LineNumberTable )
+	public length ()I
+		 Code ( LineNumberTable )
+	public matches (Ljava/lang/String;)Z
+		 Code ( LineNumberTable )
+	public offsetByCodePoints (II)I
+		 Code ( LineNumberTable StackMapTable )
+	public regionMatches (ILjava/lang/String;II)Z
+		 Code ( LineNumberTable StackMapTable )
+	public regionMatches (ZILjava/lang/String;II)Z
+		 Code ( LineNumberTable StackMapTable )
+	public replace (CC)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public replaceFirst (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public split (Ljava/lang/String;)[Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public split (Ljava/lang/String;I)[Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public startsWith (Ljava/lang/String;)Z
+		 Code ( LineNumberTable )
+	public startsWith (Ljava/lang/String;I)Z
+		 Code ( LineNumberTable StackMapTable )
+	public static copyValueOf ([C)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static copyValueOf ([CII)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static transient format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static transient format (Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf (C)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf (D)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf (F)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf (I)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf (J)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf (Ljava/lang/Object;)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public static valueOf (Z)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public static valueOf ([C)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public static valueOf ([CII)Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public subSequence (II)Ljava/lang/CharSequence;
+		 Code ( LineNumberTable )
+	public substring (I)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public substring (II)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public toCharArray ()[C
+		 Code ( LineNumberTable )
+	public toLowerCase ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public toLowerCase (Ljava/util/Locale;)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public toString ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public toUpperCase ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public trim ()Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public volatile synthetic compareTo (Ljava/lang/Object;)I
+		 Code ( LineNumberTable )
+	static <clinit> ()V
+		 Code ( LineNumberTable StackMapTable )
+	static indexOf ([CII[CIII)I
+		 Code ( LineNumberTable StackMapTable )
+	static lastIndexOf ([CII[CIII)I
+		 Code ( LineNumberTable StackMapTable )
+public final java://type/java/lang/String
+	extends java://type/java/lang/Object
+	implements java://type/java/io/Serializable, java://type/java/lang/Comparable, java://type/java/lang/CharSequence
+	private final char[] value                                                       // java://field/java/lang/String;0
+	private int hash                                                                 // java://field/java/lang/String;1
+	private static final long serialVersionUID                                       // java://field/java/lang/String;2
+	private static final java://type/java/io/ObjectStreamField[] serialPersistentFields // java://field/java/lang/String;3
+	public static final java://type/java/util/Comparator CASE_INSENSITIVE_ORDER      // java://field/java/lang/String;4
+	private static final int HASHING_SEED                                            // java://field/java/lang/String;5
+	private int hash32                                                               // java://field/java/lang/String;6
+	public void  <init>()                                                            // java://method/java/lang/String;0
+	public void  <init>(java://type/java/lang/String )                               // java://method/java/lang/String;1
+	public void  <init>(char[] )                                                     // java://method/java/lang/String;2
+	public void  <init>(char[] , int , int )                                         // java://method/java/lang/String;3
+	public void  <init>(int[] , int , int )                                          // java://method/java/lang/String;4
+	public void  <init>(byte[] , int , int , int )                                   // java://method/java/lang/String;5
+	public void  <init>(byte[] , int )                                               // java://method/java/lang/String;6
+	private static void  checkBounds(byte[] , int , int )                            // java://method/java/lang/String;7
+	public void  <init>(byte[] , int , int , java://type/java/lang/String )          // java://method/java/lang/String;8
+	public void  <init>(byte[] , int , int , java://type/java/nio/charset/Charset )  // java://method/java/lang/String;9
+	public void  <init>(byte[] , java://type/java/lang/String )                      // java://method/java/lang/String;10
+	public void  <init>(byte[] , java://type/java/nio/charset/Charset )              // java://method/java/lang/String;11
+	public void  <init>(byte[] , int , int )                                         // java://method/java/lang/String;12
+	public void  <init>(byte[] )                                                     // java://method/java/lang/String;13
+	public void  <init>(java://type/java/lang/StringBuffer )                         // java://method/java/lang/String;14
+	public void  <init>(java://type/java/lang/StringBuilder )                        // java://method/java/lang/String;15
+	void  <init>(char[] , boolean )                                                  // java://method/java/lang/String;16
+	void  <init>(int , int , char[] )                                                // java://method/java/lang/String;17
+	public int  length()                                                             // java://method/java/lang/String;18
+	public boolean  isEmpty()                                                        // java://method/java/lang/String;19
+	public char  charAt(int )                                                        // java://method/java/lang/String;20
+	public int  codePointAt(int )                                                    // java://method/java/lang/String;21
+	public int  codePointBefore(int )                                                // java://method/java/lang/String;22
+	public int  codePointCount(int , int )                                           // java://method/java/lang/String;23
+	public int  offsetByCodePoints(int , int )                                       // java://method/java/lang/String;24
+	void  getChars(char[] , int )                                                    // java://method/java/lang/String;25
+	public void  getChars(int , int , char[] , int )                                 // java://method/java/lang/String;26
+	public void  getBytes(int , int , byte[] , int )                                 // java://method/java/lang/String;27
+	public byte[]  getBytes(java://type/java/lang/String )                           // java://method/java/lang/String;28
+	public byte[]  getBytes(java://type/java/nio/charset/Charset )                   // java://method/java/lang/String;29
+	public byte[]  getBytes()                                                        // java://method/java/lang/String;30
+	public boolean  equals(java://type/java/lang/Object )                            // java://method/java/lang/String;31
+	public boolean  contentEquals(java://type/java/lang/StringBuffer )               // java://method/java/lang/String;32
+	public boolean  contentEquals(java://type/java/lang/CharSequence )               // java://method/java/lang/String;33
+	public boolean  equalsIgnoreCase(java://type/java/lang/String )                  // java://method/java/lang/String;34
+	public int  compareTo(java://type/java/lang/String )                             // java://method/java/lang/String;35
+	public int  compareToIgnoreCase(java://type/java/lang/String )                   // java://method/java/lang/String;36
+	public boolean  regionMatches(int , java://type/java/lang/String , int , int )   // java://method/java/lang/String;37
+	public boolean  regionMatches(boolean , int , java://type/java/lang/String , int , int ) // java://method/java/lang/String;38
+	public boolean  startsWith(java://type/java/lang/String , int )                  // java://method/java/lang/String;39
+	public boolean  startsWith(java://type/java/lang/String )                        // java://method/java/lang/String;40
+	public boolean  endsWith(java://type/java/lang/String )                          // java://method/java/lang/String;41
+	public int  hashCode()                                                           // java://method/java/lang/String;42
+	public int  indexOf(int )                                                        // java://method/java/lang/String;43
+	public int  indexOf(int , int )                                                  // java://method/java/lang/String;44
+	private int  indexOfSupplementary(int , int )                                    // java://method/java/lang/String;45
+	public int  lastIndexOf(int )                                                    // java://method/java/lang/String;46
+	public int  lastIndexOf(int , int )                                              // java://method/java/lang/String;47
+	private int  lastIndexOfSupplementary(int , int )                                // java://method/java/lang/String;48
+	public int  indexOf(java://type/java/lang/String )                               // java://method/java/lang/String;49
+	public int  indexOf(java://type/java/lang/String , int )                         // java://method/java/lang/String;50
+	static int  indexOf(char[] , int , int , char[] , int , int , int )              // java://method/java/lang/String;51
+	public int  lastIndexOf(java://type/java/lang/String )                           // java://method/java/lang/String;52
+	public int  lastIndexOf(java://type/java/lang/String , int )                     // java://method/java/lang/String;53
+	static int  lastIndexOf(char[] , int , int , char[] , int , int , int )          // java://method/java/lang/String;54
+	public java://type/java/lang/String  substring(int )                             // java://method/java/lang/String;55
+	public java://type/java/lang/String  substring(int , int )                       // java://method/java/lang/String;56
+	public java://type/java/lang/CharSequence  subSequence(int , int )               // java://method/java/lang/String;57
+	public java://type/java/lang/String  concat(java://type/java/lang/String )       // java://method/java/lang/String;58
+	public java://type/java/lang/String  replace(char , char )                       // java://method/java/lang/String;59
+	public boolean  matches(java://type/java/lang/String )                           // java://method/java/lang/String;60
+	public boolean  contains(java://type/java/lang/CharSequence )                    // java://method/java/lang/String;61
+	public java://type/java/lang/String  replaceFirst(java://type/java/lang/String , java://type/java/lang/String ) // java://method/java/lang/String;62
+	public java://type/java/lang/String  replaceAll(java://type/java/lang/String , java://type/java/lang/String ) // java://method/java/lang/String;63
+	public java://type/java/lang/String  replace(java://type/java/lang/CharSequence , java://type/java/lang/CharSequence ) // java://method/java/lang/String;64
+	public java://type/java/lang/String[]  split(java://type/java/lang/String , int ) // java://method/java/lang/String;65
+	public java://type/java/lang/String[]  split(java://type/java/lang/String )      // java://method/java/lang/String;66
+	public java://type/java/lang/String  toLowerCase(java://type/java/util/Locale )  // java://method/java/lang/String;67
+	public java://type/java/lang/String  toLowerCase()                               // java://method/java/lang/String;68
+	public java://type/java/lang/String  toUpperCase(java://type/java/util/Locale )  // java://method/java/lang/String;69
+	public java://type/java/lang/String  toUpperCase()                               // java://method/java/lang/String;70
+	public java://type/java/lang/String  trim()                                      // java://method/java/lang/String;71
+	public java://type/java/lang/String  toString()                                  // java://method/java/lang/String;72
+	public char[]  toCharArray()                                                     // java://method/java/lang/String;73
+	public static java://type/java/lang/String  format(java://type/java/lang/String , java://type/java/lang/Object[] ) // java://method/java/lang/String;74
+	public static java://type/java/lang/String  format(java://type/java/util/Locale , java://type/java/lang/String , java://type/java/lang/Object[] ) // java://method/java/lang/String;75
+	public static java://type/java/lang/String  valueOf(java://type/java/lang/Object ) // java://method/java/lang/String;76
+	public static java://type/java/lang/String  valueOf(char[] )                     // java://method/java/lang/String;77
+	public static java://type/java/lang/String  valueOf(char[] , int , int )         // java://method/java/lang/String;78
+	public static java://type/java/lang/String  copyValueOf(char[] , int , int )     // java://method/java/lang/String;79
+	public static java://type/java/lang/String  copyValueOf(char[] )                 // java://method/java/lang/String;80
+	public static java://type/java/lang/String  valueOf(boolean )                    // java://method/java/lang/String;81
+	public static java://type/java/lang/String  valueOf(char )                       // java://method/java/lang/String;82
+	public static java://type/java/lang/String  valueOf(int )                        // java://method/java/lang/String;83
+	public static java://type/java/lang/String  valueOf(long )                       // java://method/java/lang/String;84
+	public static java://type/java/lang/String  valueOf(float )                      // java://method/java/lang/String;85
+	public static java://type/java/lang/String  valueOf(double )                     // java://method/java/lang/String;86
+	public java://type/java/lang/String  intern()                                    // java://method/java/lang/String;87
+	int  hash32()                                                                    // java://method/java/lang/String;88
+	public int  compareTo(java://type/java/lang/Object )                             // java://method/java/lang/String;89
+	static void  <clinit>()                                                          // java://method/java/lang/String;90

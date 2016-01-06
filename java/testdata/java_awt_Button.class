@@ -1,0 +1,90 @@
+public class java/awt/Button
+extends java/awt/Component
+implements
+	javax/accessibility/Accessible
+attributes
+	InnerClasses
+	SourceFile=Button.java
+Fields
+	actionCommand Ljava/lang/String;
+	label Ljava/lang/String;
+	private buttonSerializedDataVersion I
+	private static final base Ljava/lang/String;
+		 ConstantValue
+	private static final serialVersionUID J
+		 ConstantValue
+	private static nameCounter I
+	transient actionListener Ljava/awt/event/ActionListener;
+Methods
+	constructComponentName ()Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	eventEnabled (Ljava/awt/AWTEvent;)Z
+		 Code ( LineNumberTable StackMapTable )
+	private readObject (Ljava/io/ObjectInputStream;)V
+		 Code ( LineNumberTable StackMapTable ) Exceptions
+	private static initIDs ()V
+	private writeObject (Ljava/io/ObjectOutputStream;)V
+		 Code ( LineNumberTable ) Exceptions
+	protected paramString ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	protected processActionEvent (Ljava/awt/event/ActionEvent;)V
+		 Code ( LineNumberTable StackMapTable )
+	protected processEvent (Ljava/awt/AWTEvent;)V
+		 Code ( LineNumberTable StackMapTable )
+	public <init> ()V
+		 Code ( LineNumberTable ) Exceptions
+	public <init> (Ljava/lang/String;)V
+		 Code ( LineNumberTable ) Exceptions
+	public addActionListener (Ljava/awt/event/ActionListener;)V
+		 Code ( LineNumberTable StackMapTable )
+	public addNotify ()V
+		 Code ( LineNumberTable StackMapTable )
+	public getAccessibleContext ()Ljavax/accessibility/AccessibleContext;
+		 Code ( LineNumberTable StackMapTable )
+	public getActionCommand ()Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public getActionListeners ()[Ljava/awt/event/ActionListener;
+		 Code ( LineNumberTable )
+	public getLabel ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public getListeners (Ljava/lang/Class;)[Ljava/util/EventListener;
+		 Code ( LineNumberTable StackMapTable ) Signature=<T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
+	public removeActionListener (Ljava/awt/event/ActionListener;)V
+		 Code ( LineNumberTable StackMapTable )
+	public setActionCommand (Ljava/lang/String;)V
+		 Code ( LineNumberTable )
+	public setLabel (Ljava/lang/String;)V
+		 Code ( LineNumberTable StackMapTable )
+	static <clinit> ()V
+		 Code ( LineNumberTable StackMapTable )
+public java://type/java/awt/Button
+	extends java://type/java/awt/Component
+	implements java://type/javax/accessibility/Accessible
+	java://type/java/lang/String label                                               // java://field/java/awt/Button;0
+	java://type/java/lang/String actionCommand                                       // java://field/java/awt/Button;1
+	java://type/java/awt/event/ActionListener actionListener                         // java://field/java/awt/Button;2
+	private static final java://type/java/lang/String base                           // java://field/java/awt/Button;3
+	private static int nameCounter                                                   // java://field/java/awt/Button;4
+	private static final long serialVersionUID                                       // java://field/java/awt/Button;5
+	private int buttonSerializedDataVersion                                          // java://field/java/awt/Button;6
+	private static void  initIDs()                                                   // java://method/java/awt/Button;0
+	public void  <init>()                                                            // java://method/java/awt/Button;1
+	public void  <init>(java://type/java/lang/String )                               // java://method/java/awt/Button;2
+	java://type/java/lang/String  constructComponentName()                           // java://method/java/awt/Button;3
+	public void  addNotify()                                                         // java://method/java/awt/Button;4
+	public java://type/java/lang/String  getLabel()                                  // java://method/java/awt/Button;5
+	public void  setLabel(java://type/java/lang/String )                             // java://method/java/awt/Button;6
+	public void  setActionCommand(java://type/java/lang/String )                     // java://method/java/awt/Button;7
+	public java://type/java/lang/String  getActionCommand()                          // java://method/java/awt/Button;8
+	public void  addActionListener(java://type/java/awt/event/ActionListener )       // java://method/java/awt/Button;9
+	public void  removeActionListener(java://type/java/awt/event/ActionListener )    // java://method/java/awt/Button;10
+	public java://type/java/awt/event/ActionListener[]  getActionListeners()         // java://method/java/awt/Button;11
+	public java://type/java/util/EventListener[]  getListeners(java://type/java/lang/Class ) // java://method/java/awt/Button;12
+	boolean  eventEnabled(java://type/java/awt/AWTEvent )                            // java://method/java/awt/Button;13
+	protected void  processEvent(java://type/java/awt/AWTEvent )                     // java://method/java/awt/Button;14
+	protected void  processActionEvent(java://type/java/awt/event/ActionEvent )      // java://method/java/awt/Button;15
+	protected java://type/java/lang/String  paramString()                            // java://method/java/awt/Button;16
+	private void  writeObject(java://type/java/io/ObjectOutputStream )               // java://method/java/awt/Button;17
+	private void  readObject(java://type/java/io/ObjectInputStream )                 // java://method/java/awt/Button;18
+	public java://type/javax/accessibility/AccessibleContext  getAccessibleContext() // java://method/java/awt/Button;19
+	static void  <clinit>()                                                          // java://method/java/awt/Button;20

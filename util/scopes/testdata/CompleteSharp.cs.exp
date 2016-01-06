@@ -1,0 +1,439 @@
+0-37049: "SCOPES"
+	0-872: "CommentScope" - Data: "/*
+Copyright (c) 2012 Fredrik Ehnbom
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+   1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+
+   2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+
+   3. This notice may not be removed or altered from any source
+   distribution.
+*/"
+	1055-37049: "BracketScope"
+		1089-1097: "TextScope" - Data: "";;--;;""
+		1157-34797: "BracketScope"
+			1207-32061: "BracketScope"
+				1247-1338: "BracketScope" - Data: "{
+                AppDomain.CurrentDomain.AssemblyResolve += ResolveAssembly;
+            }"
+				1413-2804: "BracketScope"
+					1560-2749: "BracketScope"
+						1624-2731: "BracketScope"
+							1684-1957: "BracketScope"
+								1821-1896: "BracketScope" - Data: "{
+                                return i+1;
+                            }"
+							2070-2323: "BracketScope"
+								2189-2262: "BracketScope" - Data: "{
+                                return i;
+                            }"
+							2436-2709: "BracketScope"
+								2573-2648: "BracketScope" - Data: "{
+                                return i+1;
+                            }"
+				2896-3813: "BracketScope"
+					3023-3763: "BracketScope"
+						3230-3233: "TextScope" - Data: ""[""
+						3256-3426: "BracketScope" - Data: "{
+                        toadd = toadd.Substring(1, toadd.Length-2);
+                        toadd = toadd.Substring(0, GetParameterExtent(toadd));
+                    }"
+				3919-5031: "BracketScope"
+					3989-3992: "TextScope" - Data: ""[""
+					4011-4109: "BracketScope" - Data: "{
+                    parameters = parameters.Substring(1, parameters.Length-2);
+                }"
+					4207-4282: "BracketScope" - Data: "{
+                    para = SplitParameters(parameters);
+                }"
+					4320-4534: "BracketScope"
+						4446-4516: "BracketScope"
+							4482-4485: "TextScope" - Data: ""T""
+					4564-4566: "TextScope" - Data: """"
+					4638-4989: "BracketScope"
+						4711-4715: "TextScope" - Data: "", ""
+						4773-4835: "BracketScope" - Data: "{
+                        ret+= para[i];
+                    }"
+						4881-4971: "BracketScope"
+							4914-4918: "TextScope" - Data: ""${""
+							4929-4932: "TextScope" - Data: "":""
+							4945-4948: "TextScope" - Data: ""}""
+				5113-6211: "BracketScope"
+					5210-6169: "BracketScope"
+						5256-5300: "TextScope" - Data: ""^\\s*([^`]+)\\`(\\d+)([^\\[]+)?(\\[.*\\])?""
+						5357-5360: "TextScope" - Data: ""$""
+						5362-5367: "TextScope" - Data: ""\\$""
+						5694-5781: "BracketScope"
+							5731-5734: "TextScope" - Data: "".""
+						5817-5819: "TextScope" - Data: """"
+						5868-5872: "TextScope" - Data: ""[]""
+						5895-6040: "BracketScope"
+							5930-5934: "TextScope" - Data: ""[]""
+						6076-6079: "TextScope" - Data: ""<""
+						6128-6131: "TextScope" - Data: "">""
+				6292-6673: "BracketScope"
+					6466-6621: "BracketScope" - Data: "{
+                    string args = template.Substring(index+1, index2-index-1);
+                    return SplitParameters(args, false);
+                }"
+				6739-6928: "BracketScope" - Data: "{
+                int index = fullname.IndexOf('<');
+                if (index == -1)
+                    return fullname;
+                return fullname.Substring(0, index);
+            }"
+				7034-8233: "BracketScope"
+					7129-7208: "BracketScope"
+						7163-7166: "TextScope" - Data: ""`""
+					7349-7560: "BracketScope" - Data: "{
+                    string bn = GetBase(templateParam[i]);
+                    string[] args = GetTemplateArguments(templateParam[i]);
+                    subtypes[i] = GetType(ad, bn, args);
+                }"
+					7677-8077: "BracketScope"
+						7723-7935: "BracketScope"
+							7843-7862: "TextScope" - Data: ""returning type2: ""
+						7996-8059: "BracketScope" - Data: "{
+                        reportError(e);
+                    }"
+					8160-8178: "TextScope" - Data: ""returning type: ""
+				8285-8501: "BracketScope" - Data: "{
+                NONE = (0<<0),
+                STATIC = (1<<0),
+                PRIVATE = (1<<1),
+                PROTECTED = (1<<2),
+                PUBLIC = (1<<3),
+                INTERNAL = (1<<4)
+            }"
+				8567-10534: "BracketScope"
+					8685-10480: "BracketScope"
+						8751-9291: "BracketScope" - Data: "{
+                        FieldInfo f = (FieldInfo)m;
+                        if (f.IsPrivate)
+                            modifiers |= Accessibility.PRIVATE;
+                        if (f.IsPublic)
+                            modifiers |= Accessibility.PUBLIC;
+                        if (f.IsStatic)
+                            modifiers |= Accessibility.STATIC;
+                        if (!f.IsPublic && !f.IsPrivate)
+                            modifiers |= Accessibility.PROTECTED;
+                        break;
+                    }"
+						9357-9905: "BracketScope" - Data: "{
+                        MethodInfo mi = (MethodInfo)m;
+                        if (mi.IsPrivate)
+                            modifiers |= Accessibility.PRIVATE;
+                        if (mi.IsPublic)
+                            modifiers |= Accessibility.PUBLIC;
+                        if (mi.IsStatic)
+                            modifiers |= Accessibility.STATIC;
+                        if (!mi.IsPublic && !mi.IsPrivate)
+                            modifiers |= Accessibility.PROTECTED;
+                        break;
+                    }"
+						9973-10279: "BracketScope"
+							10125-10226: "BracketScope" - Data: "{
+                            modifiers |= (Accessibility)GetModifiers(mi);
+                        }"
+						10329-10462: "BracketScope" - Data: "{
+                        modifiers = Accessibility.STATIC|Accessibility.PUBLIC;
+                        break;
+                    }"
+				10640-11210: "BracketScope"
+					10678-10687: "TextScope" - Data: ""file://""
+					10689-10691: "TextScope" - Data: """"
+					10890-10960: "BracketScope" - Data: "{
+                    path = path.Substring(0, idx);
+                }"
+					10991-10994: "TextScope" - Data: ""/""
+					11004-11010: "TextScope" - Data: "".dll""
+					11109-11167: "BracketScope" - Data: "{
+                    return Load(path);
+                }"
+				11306-12511: "BracketScope"
+					11379-11382: "TextScope" - Data: "",""
+					11484-11669: "BracketScope"
+						11592-11651: "BracketScope" - Data: "{
+                        return asm;
+                    }"
+					11686-11754: "CommentScope" - Data: "// Assembly wasn't found, try and see if it's in the same directory
+"
+					11770-11820: "CommentScope" - Data: "// as one of the other already loaded assemblies.
+"
+					11868-12129: "BracketScope"
+						11948-12111: "BracketScope" - Data: "{
+                        Assembly ret = TryLoad(asm, name);
+                        if (ret != null)
+                            return ret;
+                    }"
+					12229-12385: "BracketScope" - Data: "{
+                    Assembly ret = TryLoad(asm.CodeBase, name);
+                    if (ret != null)
+                        return ret;
+                }"
+					12433-12459: "TextScope" - Data: ""Couldn't find assembly: ""
+				12569-12646: "BracketScope" - Data: "{
+                return Assembly.Load(File.ReadAllBytes(str));
+            }"
+				12708-13011: "BracketScope"
+					12839-12971: "BracketScope" - Data: "{
+                    t = ass.GetType(basename);
+                    if (t != null)
+                        break;
+                }"
+				13090-32051: "BracketScope"
+					13128-31900: "BracketScope"
+						13197-13298: "BracketScope"
+							13254-13270: "TextScope" - Data: ""execute args: ""
+						13419-13426: "TextScope" - Data: ""-quit""
+						13448-13509: "BracketScope" - Data: "{
+                        return false;
+                    }"
+						13550-13562: "TextScope" - Data: ""-findclass""
+						13584-16497: "BracketScope"
+							13710-14806: "BracketScope"
+								13772-14624: "BracketScope"
+									13917-14021: "BracketScope"
+										13972-13975: "TextScope" - Data: "".""
+									14085-14094: "TextScope" - Data: ""Trying ""
+									14249-14594: "BracketScope" - Data: "{
+                                    string typename = t2.FullName;
+                                    System.Console.WriteLine(typename);
+                                    System.Console.Error.WriteLine(typename);
+                                    found = true;
+                                    break;
+                                }"
+								14701-14780: "BracketScope" - Data: "{
+                                reportError(e);
+                            }"
+							14907-14937: "CommentScope" - Data: "// Probably a namespace then?
+"
+							15023-16438: "BracketScope"
+								15085-16306: "BracketScope"
+									15187-16190: "BracketScope"
+										15405-16062: "BracketScope"
+											15587-15590: "TextScope" - Data: "".""
+											15714-16024: "BracketScope" - Data: "{
+                                            System.Console.WriteLine(test);
+                                            System.Console.Error.WriteLine(test);
+                                            found = true;
+                                            break;
+                                        }"
+								16381-16412: "BracketScope" - Data: "{
+                            }"
+						16825-16902: "BracketScope" - Data: "{
+                        templateParam[i] = args[i+3];
+                    }"
+						16982-17070: "BracketScope" - Data: "{
+                        t = GetType(ad, args[1], templateParam);
+                    }"
+						17131-17194: "BracketScope" - Data: "{
+                        reportError(e);
+                    }"
+						17231-17242: "TextScope" - Data: ""-complete""
+						17264-25313: "BracketScope"
+							17329-23694: "BracketScope"
+								17542-23668: "BracketScope"
+									17630-23638: "BracketScope"
+										17912-23604: "BracketScope"
+											18064-18178: "BracketScope" - Data: "{
+                                            completion = m.ToString();
+                                        }"
+											18279-18898: "BracketScope"
+												18356-18428: "TextScope" - Data: ""Skipping this member as an exception was thrown when calling ToString:""
+												18562-18633: "CommentScope" - Data: "// Seems that some state is messed up when this happens, so we need to
+"
+												18677-18736: "CommentScope" - Data: "// force a reload of the assemblies to make it work again.
+"
+											19210-19212: "TextScope" - Data: """"
+											19482-23056: "BracketScope"
+												19828-19833: "BracketScope" - Data: "{','}"
+												20299-21794: "BracketScope"
+													20432-20450: "CommentScope" - Data: "// Generic method
+"
+													20654-20657: "TextScope" - Data: ""<""
+													20812-20817: "BracketScope" - Data: "{','}"
+													20947-21615: "BracketScope"
+														21065-21269: "BracketScope"
+															21137-21141: "TextScope" - Data: "", ""
+															21210-21214: "TextScope" - Data: "", ""
+														21402-21406: "TextScope" - Data: ""${""
+														21420-21423: "TextScope" - Data: "":""
+														21430-21433: "TextScope" - Data: ""}""
+													21675-21679: "TextScope" - Data: "">(""
+													21743-21747: "TextScope" - Data: "">(""
+												21967-22891: "BracketScope"
+													22169-22845: "BracketScope"
+														22287-22491: "BracketScope"
+															22359-22363: "TextScope" - Data: "", ""
+															22432-22436: "TextScope" - Data: "", ""
+														22628-22632: "TextScope" - Data: ""${""
+														22646-22649: "TextScope" - Data: "":""
+														22660-22663: "TextScope" - Data: ""}""
+												22950-22953: "TextScope" - Data: "")""
+												23010-23013: "TextScope" - Data: "")""
+											23142-23251: "BracketScope" - Data: "{
+                                            display = completion;
+                                        }"
+											23374-23378: "TextScope" - Data: ""\t""
+							23748-25291: "BracketScope"
+								23843-25265: "BracketScope"
+									23913-25117: "BracketScope"
+										24023-25083: "BracketScope"
+											24254-24428: "BracketScope"
+												24344-24353: "TextScope" - Data: ""\tclass""
+											24579-25045: "BracketScope"
+												24975-24988: "TextScope" - Data: ""\tnamespace""
+									25200-25235: "BracketScope" - Data: "{
+                                }"
+						25354-25367: "TextScope" - Data: ""-returntype""
+						25389-31882: "BracketScope"
+							25454-29306: "BracketScope"
+								25996-26749: "BracketScope"
+									26111-26116: "BracketScope" - Data: "{','}"
+									26370-26719: "BracketScope"
+										26542-26685: "BracketScope" - Data: "{
+                                        generics = null;
+                                        break;
+                                    }"
+								26778-26839: "CommentScope" - Data: "// This isn't 100% correct, but an instance where two things
+"
+								26867-26926: "CommentScope" - Data: "// are named the same but return two different types would
+"
+								26954-26977: "CommentScope" - Data: "// be considered rare.
+"
+								27079-27688: "BracketScope"
+									27169-27658: "BracketScope"
+										27320-27436: "BracketScope" - Data: "{
+                                        m2 = m2.MakeGenericMethod(generics);
+                                    }"
+								27873-28213: "BracketScope"
+									27962-28183: "BracketScope" - Data: "{
+                                    System.Console.WriteLine(FixName(f.FieldType.FullName));
+                                    found = true;
+                                    break;
+                                }"
+								28398-28745: "BracketScope"
+									28487-28715: "BracketScope" - Data: "{
+                                    System.Console.WriteLine(FixName(e.EventHandlerType.FullName));
+                                    found = true;
+                                    break;
+                                }"
+								28937-29280: "BracketScope"
+									29026-29250: "BracketScope" - Data: "{
+                                    System.Console.WriteLine(FixName(p.PropertyType.FullName));
+                                    found = true;
+                                    break;
+                                }"
+							29360-31860: "BracketScope"
+								29503-30494: "BracketScope"
+									29573-30346: "BracketScope"
+										29683-30218: "BracketScope"
+											29936-30180: "BracketScope" - Data: "{
+                                            System.Console.WriteLine(FixName(t3.FullName));
+                                            found = true;
+                                            break;
+                                        }"
+									30429-30464: "BracketScope" - Data: "{
+                                }"
+								30563-31834: "BracketScope"
+									30597-30636: "CommentScope" - Data: "// It's a namespace we are completing.
+"
+									30690-30693: "TextScope" - Data: "".""
+									30806-31804: "BracketScope"
+										30884-31677: "BracketScope"
+											31002-31537: "BracketScope"
+												31253-31495: "BracketScope" - Data: "{
+                                                System.Console.WriteLine(ns);
+                                                found = true;
+                                                break;
+                                            }"
+										31768-31770: "BracketScope" - Data: "{}"
+					31953-32008: "BracketScope" - Data: "{
+                    reportError(e);
+                }"
+			32227-32344: "BracketScope" - Data: "{
+            assemblies = arg;
+            times = new DateTime[arg.Length];
+            LoadAssemblies();
+        }"
+			32391-33298: "BracketScope"
+				32433-32554: "BracketScope"
+					32482-32500: "TextScope" - Data: ""Unloading domain""
+				32596-32609: "TextScope" - Data: ""MyAppDomain""
+				32704-32736: "TextScope" - Data: ""CompleteSharp+MyAppDomain+Hack""
+				32879-33288: "BracketScope"
+					32917-33166: "BracketScope"
+						33100-33111: "TextScope" - Data: ""Loading: ""
+					33219-33274: "BracketScope" - Data: "{
+                    reportError(e);
+                }"
+			33370-33637: "BracketScope"
+				33491-33523: "TextScope" - Data: ""CompleteSharp+MyAppDomain+Hack""
+			33717-34791: "BracketScope"
+				33731-33806: "CommentScope" - Data: "// Yes, polling like this is a bit messy, however FileSystemWatcher didn't
+"
+				33818-33894: "CommentScope" - Data: "// work for me on OS X, there probably aren't that many assemblies to check
+"
+				33906-33979: "CommentScope" - Data: "// and the polling is only done after the user requests a completion, so
+"
+				33991-34018: "CommentScope" - Data: "// it shouldn't be too bad
+"
+				34120-34658: "BracketScope"
+					34158-34536: "BracketScope"
+						34296-34518: "BracketScope"
+							34353-34364: "TextScope" - Data: ""changed: ""
+							34383-34387: "TextScope" - Data: "", ""
+							34409-34413: "TextScope" - Data: "", ""
+					34589-34644: "BracketScope" - Data: "{
+                    reportError(e);
+                }"
+				34695-34781: "BracketScope" - Data: "{
+                forceReload = false;
+                LoadAssemblies();
+            }"
+		34845-35018: "BracketScope"
+			34886-34899: "TextScope" - Data: ""Exception: ""
+		35066-37047: "BracketScope"
+			35088-36965: "BracketScope"
+				35200-35298: "BracketScope"
+					35251-35256: "BracketScope" - Data: "{sep}"
+				35328-35381: "BracketScope" - Data: "{
+                argv = new string[0];
+            }"
+				35472-36955: "BracketScope"
+					35510-36833: "BracketScope"
+						35568-35663: "CommentScope" - Data: "// Just to indicate that there's no more output from the command and we're ready for new input
+"
+						35868-35875: "TextScope" - Data: ""got: ""
+						36104-36116: "TextScope" - Data: ""-findclass""
+						36138-36687: "BracketScope"
+							36287-36596: "BracketScope"
+								36396-36570: "BracketScope" - Data: "{
+                                if (line == sep)
+                                    break;
+                                modules.Add(line);
+                            }"
+							36663-36665: "BracketScope" - Data: "{}"
+						36761-36815: "BracketScope" - Data: "{
+                        break;
+                    }"
+					36886-36941: "BracketScope" - Data: "{
+                    reportError(e);
+                }"
+			37002-37041: "BracketScope" - Data: "{
+            reportError(e);
+        }"

@@ -1,0 +1,160 @@
+public class javax/swing/JLabel
+extends javax/swing/JComponent
+implements
+	javax/swing/SwingConstants
+	javax/accessibility/Accessible
+attributes
+	InnerClasses
+	SourceFile=JLabel.java
+Fields
+	private defaultIcon Ljavax/swing/Icon;
+	private disabledIcon Ljavax/swing/Icon;
+	private disabledIconSet Z
+	private horizontalAlignment I
+	private horizontalTextPosition I
+	private iconTextGap I
+	private mnemonic I
+	private mnemonicIndex I
+	private static final uiClassID Ljava/lang/String;
+		 ConstantValue
+	private text Ljava/lang/String;
+	private verticalAlignment I
+	private verticalTextPosition I
+	protected labelFor Ljava/awt/Component;
+	static final LABELED_BY_PROPERTY Ljava/lang/String;
+		 ConstantValue
+Methods
+	private writeObject (Ljava/io/ObjectOutputStream;)V
+		 Code ( LineNumberTable StackMapTable ) Exceptions
+	protected checkHorizontalKey (ILjava/lang/String;)I
+		 Code ( LineNumberTable StackMapTable )
+	protected checkVerticalKey (ILjava/lang/String;)I
+		 Code ( LineNumberTable StackMapTable )
+	protected paramString ()Ljava/lang/String;
+		 Code ( LineNumberTable StackMapTable )
+	public <init> ()V
+		 Code ( LineNumberTable )
+	public <init> (Ljava/lang/String;)V
+		 Code ( LineNumberTable )
+	public <init> (Ljava/lang/String;I)V
+		 Code ( LineNumberTable )
+	public <init> (Ljava/lang/String;Ljavax/swing/Icon;I)V
+		 Code ( LineNumberTable )
+	public <init> (Ljavax/swing/Icon;)V
+		 Code ( LineNumberTable )
+	public <init> (Ljavax/swing/Icon;I)V
+		 Code ( LineNumberTable )
+	public getAccessibleContext ()Ljavax/accessibility/AccessibleContext;
+		 Code ( LineNumberTable StackMapTable )
+	public getDisabledIcon ()Ljavax/swing/Icon;
+		 Code ( LineNumberTable StackMapTable ) RuntimeVisibleAnnotations
+	public getDisplayedMnemonic ()I
+		 Code ( LineNumberTable )
+	public getDisplayedMnemonicIndex ()I
+		 Code ( LineNumberTable )
+	public getHorizontalAlignment ()I
+		 Code ( LineNumberTable )
+	public getHorizontalTextPosition ()I
+		 Code ( LineNumberTable )
+	public getIcon ()Ljavax/swing/Icon;
+		 Code ( LineNumberTable )
+	public getIconTextGap ()I
+		 Code ( LineNumberTable )
+	public getLabelFor ()Ljava/awt/Component;
+		 Code ( LineNumberTable )
+	public getText ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public getUI ()Ljavax/swing/plaf/LabelUI;
+		 Code ( LineNumberTable )
+	public getUIClassID ()Ljava/lang/String;
+		 Code ( LineNumberTable )
+	public getVerticalAlignment ()I
+		 Code ( LineNumberTable )
+	public getVerticalTextPosition ()I
+		 Code ( LineNumberTable )
+	public imageUpdate (Ljava/awt/Image;IIIII)Z
+		 Code ( LineNumberTable StackMapTable )
+	public setDisabledIcon (Ljavax/swing/Icon;)V
+		 Code ( LineNumberTable StackMapTable )
+	public setDisplayedMnemonic (C)V
+		 Code ( LineNumberTable StackMapTable )
+	public setDisplayedMnemonic (I)V
+		 Code ( LineNumberTable StackMapTable )
+	public setDisplayedMnemonicIndex (I)V
+		 Code ( LineNumberTable StackMapTable ) Exceptions
+	public setHorizontalAlignment (I)V
+		 Code ( LineNumberTable StackMapTable )
+	public setHorizontalTextPosition (I)V
+		 Code ( LineNumberTable )
+	public setIcon (Ljavax/swing/Icon;)V
+		 Code ( LineNumberTable StackMapTable )
+	public setIconTextGap (I)V
+		 Code ( LineNumberTable StackMapTable )
+	public setLabelFor (Ljava/awt/Component;)V
+		 Code ( LineNumberTable StackMapTable )
+	public setText (Ljava/lang/String;)V
+		 Code ( LineNumberTable StackMapTable )
+	public setUI (Ljavax/swing/plaf/LabelUI;)V
+		 Code ( LineNumberTable StackMapTable )
+	public setVerticalAlignment (I)V
+		 Code ( LineNumberTable StackMapTable )
+	public setVerticalTextPosition (I)V
+		 Code ( LineNumberTable StackMapTable )
+	public updateUI ()V
+		 Code ( LineNumberTable )
+public java://type/javax/swing/JLabel
+	extends java://type/javax/swing/JComponent
+	implements java://type/javax/swing/SwingConstants, java://type/javax/accessibility/Accessible
+	private static final java://type/java/lang/String uiClassID                      // java://field/javax/swing/JLabel;0
+	private int mnemonic                                                             // java://field/javax/swing/JLabel;1
+	private int mnemonicIndex                                                        // java://field/javax/swing/JLabel;2
+	private java://type/java/lang/String text                                        // java://field/javax/swing/JLabel;3
+	private java://type/javax/swing/Icon defaultIcon                                 // java://field/javax/swing/JLabel;4
+	private java://type/javax/swing/Icon disabledIcon                                // java://field/javax/swing/JLabel;5
+	private boolean disabledIconSet                                                  // java://field/javax/swing/JLabel;6
+	private int verticalAlignment                                                    // java://field/javax/swing/JLabel;7
+	private int horizontalAlignment                                                  // java://field/javax/swing/JLabel;8
+	private int verticalTextPosition                                                 // java://field/javax/swing/JLabel;9
+	private int horizontalTextPosition                                               // java://field/javax/swing/JLabel;10
+	private int iconTextGap                                                          // java://field/javax/swing/JLabel;11
+	protected java://type/java/awt/Component labelFor                                // java://field/javax/swing/JLabel;12
+	static final java://type/java/lang/String LABELED_BY_PROPERTY                    // java://field/javax/swing/JLabel;13
+	public void  <init>(java://type/java/lang/String , java://type/javax/swing/Icon , int ) // java://method/javax/swing/JLabel;0
+	public void  <init>(java://type/java/lang/String , int )                         // java://method/javax/swing/JLabel;1
+	public void  <init>(java://type/java/lang/String )                               // java://method/javax/swing/JLabel;2
+	public void  <init>(java://type/javax/swing/Icon , int )                         // java://method/javax/swing/JLabel;3
+	public void  <init>(java://type/javax/swing/Icon )                               // java://method/javax/swing/JLabel;4
+	public void  <init>()                                                            // java://method/javax/swing/JLabel;5
+	public java://type/javax/swing/plaf/LabelUI  getUI()                             // java://method/javax/swing/JLabel;6
+	public void  setUI(java://type/javax/swing/plaf/LabelUI )                        // java://method/javax/swing/JLabel;7
+	public void  updateUI()                                                          // java://method/javax/swing/JLabel;8
+	public java://type/java/lang/String  getUIClassID()                              // java://method/javax/swing/JLabel;9
+	public java://type/java/lang/String  getText()                                   // java://method/javax/swing/JLabel;10
+	public void  setText(java://type/java/lang/String )                              // java://method/javax/swing/JLabel;11
+	public java://type/javax/swing/Icon  getIcon()                                   // java://method/javax/swing/JLabel;12
+	public void  setIcon(java://type/javax/swing/Icon )                              // java://method/javax/swing/JLabel;13
+	public java://type/javax/swing/Icon  getDisabledIcon()                           // java://method/javax/swing/JLabel;14
+	public void  setDisabledIcon(java://type/javax/swing/Icon )                      // java://method/javax/swing/JLabel;15
+	public void  setDisplayedMnemonic(int )                                          // java://method/javax/swing/JLabel;16
+	public void  setDisplayedMnemonic(char )                                         // java://method/javax/swing/JLabel;17
+	public int  getDisplayedMnemonic()                                               // java://method/javax/swing/JLabel;18
+	public void  setDisplayedMnemonicIndex(int )                                     // java://method/javax/swing/JLabel;19
+	public int  getDisplayedMnemonicIndex()                                          // java://method/javax/swing/JLabel;20
+	protected int  checkHorizontalKey(int , java://type/java/lang/String )           // java://method/javax/swing/JLabel;21
+	protected int  checkVerticalKey(int , java://type/java/lang/String )             // java://method/javax/swing/JLabel;22
+	public int  getIconTextGap()                                                     // java://method/javax/swing/JLabel;23
+	public void  setIconTextGap(int )                                                // java://method/javax/swing/JLabel;24
+	public int  getVerticalAlignment()                                               // java://method/javax/swing/JLabel;25
+	public void  setVerticalAlignment(int )                                          // java://method/javax/swing/JLabel;26
+	public int  getHorizontalAlignment()                                             // java://method/javax/swing/JLabel;27
+	public void  setHorizontalAlignment(int )                                        // java://method/javax/swing/JLabel;28
+	public int  getVerticalTextPosition()                                            // java://method/javax/swing/JLabel;29
+	public void  setVerticalTextPosition(int )                                       // java://method/javax/swing/JLabel;30
+	public int  getHorizontalTextPosition()                                          // java://method/javax/swing/JLabel;31
+	public void  setHorizontalTextPosition(int )                                     // java://method/javax/swing/JLabel;32
+	public boolean  imageUpdate(java://type/java/awt/Image , int , int , int , int , int ) // java://method/javax/swing/JLabel;33
+	private void  writeObject(java://type/java/io/ObjectOutputStream )               // java://method/javax/swing/JLabel;34
+	protected java://type/java/lang/String  paramString()                            // java://method/javax/swing/JLabel;35
+	public java://type/java/awt/Component  getLabelFor()                             // java://method/javax/swing/JLabel;36
+	public void  setLabelFor(java://type/java/awt/Component )                        // java://method/javax/swing/JLabel;37
+	public java://type/javax/accessibility/AccessibleContext  getAccessibleContext() // java://method/javax/swing/JLabel;38
